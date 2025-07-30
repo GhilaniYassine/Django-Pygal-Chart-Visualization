@@ -2,7 +2,7 @@ from django.views.generic import TemplateView
 from pygal.style import DarkStyle
 from django.shortcuts import render,redirect
 from django.http import HttpResponse
-from  .models import Employee
+from  .models import *
 from .charts import EmployeePieChart,EmployeeGaugeChart,EmployeeBarChart
 
 def clear(request):

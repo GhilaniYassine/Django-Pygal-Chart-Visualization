@@ -1,5 +1,5 @@
 import pygal
-from .models import Employee
+from .models import *
 class EmployeePieChart():
     def __init__(self,**kwargs):
         self.chart=pygal.Pie(**kwargs)
