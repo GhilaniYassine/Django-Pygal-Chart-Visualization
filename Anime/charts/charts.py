@@ -5,8 +5,6 @@ class AnimePieChart():
         self.chart=pygal.Pie(**kwargs)
         self.chart.title='THE differnet anime genres'
         self.chart.style=pygal.style.DarkStyle
-        self.chart.legend_at_bottom=True
-        self.chart.show_legend=True
     def get_data(self):
         
         genre_counts={}

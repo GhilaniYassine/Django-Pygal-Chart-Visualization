@@ -16,14 +16,11 @@ class home(TemplateView):
 
         # Instantiate our chart. We'll keep the size/style/etc.
         # config here in the view instead of `charts.py`.
-        cht_employee = AnimePieChart(
-            height=600,
-            width=800,
-            explicit_size=True,
-            style=DarkStyle
-        )
+        cht = AnimePieChart()
 
         # Call the `.generate()` method on our chart object
         # and pass it to template context.
-        context['cht_employee'] = cht_employee.generate()
+        context['cht'] = cht.generate()
         return context
+def anime_list(request):
+    return render(request, 'anime_list.html', {'anime_names': anime_names})

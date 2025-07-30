@@ -53,17 +53,18 @@ class Command(BaseCommand):
                     try:
                         # Clean and prepare data
                         anime_data = self.clean_row_data(row)
-                        
+                        i=0
                         # Create or update anime record
-                        anime, created = Anime.objects.update_or_create(
+                        if i<500:
+                            anime, created = Anime.objects.update_or_create(
                             anime_id=anime_data['anime_id'],
                             defaults=anime_data
                         )
                         
-                        if created:
-                            created_count += 1
-                        else:
-                            updated_count += 1
+                            if created:
+                                created_count += 1
+                            else:
+                                updated_count += 1
                             
                         if (created_count + updated_count) % 50 == 0:
                             self.stdout.write(f'Processed {created_count + updated_count} records...')
