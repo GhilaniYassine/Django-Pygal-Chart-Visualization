@@ -1,42 +1,24 @@
 import pygal
 from .models import *
-class EmployeePieChart():
+class AnimePieChart():
     def __init__(self,**kwargs):
         self.chart=pygal.Pie(**kwargs)
-        self.chart.title='Employees in different department'
+        self.chart.title='THE differnet anime genres'
+        self.chart.style=pygal.style.DarkStyle
+        self.chart.legend_at_bottom=True
+        self.chart.show_legend=True
     def get_data(self):
-        data={}
-        for emp in Employee.objects.all():
-            data[emp.department]=emp.strength
-        return data
-    def generate(self):
-        chart_data=self.get_data()
-        for key,value in chart_data.items():
-            self.chart.add(key,value)
-        return self.chart.render(is_unicode=True)
-class EmployeeGaugeChart():
-    def __init__(self,**kwargs):
-        self.chart=pygal.Gauge(**kwargs)
-        self.chart.title='Employees in different department'
-    def get_data(self):
-        data={}
-        for emp in Employee.objects.all():
-            data[emp.department]=emp.strength
-        return data
-    def generate(self):
-        chart_data=self.get_data()
-        for key,value in chart_data.items():
-            self.chart.add(key,value)
-        return self.chart.render(is_unicode=True)
-class EmployeeBarChart():
-    def __init__(self,**kwargs):
-        self.chart=pygal.Bar(**kwargs)
-        self.chart.title='Employees in different department'
-    def get_data(self):
-        data={}
-        for emp in Employee.objects.all():
-            data[emp.department]=emp.strength
-        return data
+        
+        genre_counts={}
+        genres = Anime.objects.values_list('genres', flat=True).distinct()
+        for genre in genres:
+            count = Anime.objects.filter(genres=genre).count()
+            genre_counts[genre] = count
+        genre_data = {genre: count for genre, count in genre_counts.items()}
+        return genre_data
+
+
+        
     def generate(self):
         chart_data=self.get_data()
         for key,value in chart_data.items():

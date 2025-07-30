@@ -25,10 +25,6 @@ class Anime(models.Model):
     scored_by = models.CharField(max_length=50)
     members = models.IntegerField()
     image_url = models.URLField(max_length=500)
-    
-    # Add these fields for better data management
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
         return self.name
@@ -37,11 +33,3 @@ class Anime(models.Model):
         ordering = ['popularity']
         verbose_name = 'Anime'
         verbose_name_plural = 'Animes'
-        
-    @property
-    def score_float(self):
-        """Convert score to float if possible"""
-        try:
-            return float(self.score) if self.score else None
-        except (ValueError, TypeError):
-            return None
