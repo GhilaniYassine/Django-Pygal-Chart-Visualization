@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Department and Strength Form</title>
+    <style>
+        /* Define styles for the box-style button */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border: 2px solid #007bff;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px; /* Add some space below the form */
+        }
+        .btn:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Enter Details</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="department">Department:</label>
+        <input type="text" name="department"><br>
+        <label for="strength">Strength:</label>
+        <input type="number" name="strength"><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <a href="/index" class="btn">Click to Pie chart</a>
+    <a href="/index1" class="btn">Click to  Gauge chart</a>
+    <a href="/index2" class="btn">Click to Bar chart</a>
+    <a href="/clear" class="btn">Click to Clear data</a>
+</body>
+</html>

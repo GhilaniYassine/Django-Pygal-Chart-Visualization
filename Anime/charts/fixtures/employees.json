@@ -1,0 +1,242 @@
+[
+    {
+        "model": "charts.employee",
+        "pk": 1,
+        "fields": {
+            "department": "Engineering",
+            "strength": 25
+        }
+    },
+    {
+        "model": "charts.employee",
+        "pk": 2,
+        "fields": {
+            "department": "Marketing",
+            "strength": 15
+        }
+    },
+    {
+        "model": "charts.employee",
+        "pk": 3,
+        "fields": {
+            "department": "Sales",
+            "strength": 20
+        }
+    },
+    {
+        "model": "charts.employee",
+        "pk": 4,
+        "fields": {
+            "department": "HR",
+            "strength": 8
+        }
+    },
+    {
+        "model": "charts.employee",
+        "pk": 5,
+        "fields": {
+            "department": "Finance",
+            "strength": 12
+        }
+    },
+    {
+        "model": "charts.employee",
+        "pk": 6,
+        "fields": {
+            "department": "Engineering",
+            "strength": 30
+        }
+    },
+    {
+        "model": "charts.employee",
+        "pk": 7,
+        "fields": {
+            "department": "Operations",
+            "strength": 18
+        }
+    },
+    {
+        "model": "charts.employee",
+        "pk": 8,
+        "fields": {
+            "department": "Marketing",
+            "strength": 22
+        }
+    },
+    {
+        "model": "charts.employee",
+        "pk": 9,
+        "fields": {
+            "department": "Sales",
+            "strength": 16
+        }
+    },
+    {
+        "model": "charts.employee",
+        "pk": 10,
+        "fields": {
+            "department": "IT Support",
+            "strength": 10
+        }
+    },
+    {
+        "model": "charts.employee",
+        "pk": 11,
+        "fields": {
+            "department": "Engineering",
+            "strength": 28
+        }
+    },
+    {
+        "model": "charts.employee",
+        "pk": 12,
+        "fields": {
+            "department": "Legal",
+            "strength": 5
+        }
+    },
+    {
+        "model": "charts.employee",
+        "pk": 13,
+        "fields": {
+            "department": "HR",
+            "strength": 14
+        }
+    },
+    {
+        "model": "charts.employee",
+        "pk": 14,
+        "fields": {
+            "department": "Finance",
+            "strength": 18
+        }
+    },
+    {
+        "model": "charts.employee",
+        "pk": 15,
+        "fields": {
+            "department": "Operations",
+            "strength": 24
+        }
+    },
+    {
+        "model": "charts.employee",
+        "pk": 16,
+        "fields": {
+            "department": "Marketing",
+            "strength": 19
+        }
+    },
+    {
+        "model": "charts.employee",
+        "pk": 17,
+        "fields": {
+            "department": "Sales",
+            "strength": 26
+        }
+    },
+    {
+        "model": "charts.employee",
+        "pk": 18,
+        "fields": {
+            "department": "Engineering",
+            "strength": 32
+        }
+    },
+    {
+        "model": "charts.employee",
+        "pk": 19,
+        "fields": {
+            "department": "Customer Service",
+            "strength": 12
+        }
+    },
+    {
+        "model": "charts.employee",
+        "pk": 20,
+        "fields": {
+            "department": "IT Support",
+            "strength": 15
+        }
+    },
+    {
+        "model": "charts.employee",
+        "pk": 21,
+        "fields": {
+            "department": "Finance",
+            "strength": 21
+        }
+    },
+    {
+        "model": "charts.employee",
+        "pk": 22,
+        "fields": {
+            "department": "HR",
+            "strength": 11
+        }
+    },
+    {
+        "model": "charts.employee",
+        "pk": 23,
+        "fields": {
+            "department": "Operations",
+            "strength": 29
+        }
+    },
+    {
+        "model": "charts.employee",
+        "pk": 24,
+        "fields": {
+            "department": "Marketing",
+            "strength": 17
+        }
+    },
+    {
+        "model": "charts.employee",
+        "pk": 25,
+        "fields": {
+            "department": "Sales",
+            "strength": 23
+        }
+    },
+    {
+        "model": "charts.employee",
+        "pk": 26,
+        "fields": {
+            "department": "Engineering",
+            "strength": 27
+        }
+    },
+    {
+        "model": "charts.employee",
+        "pk": 27,
+        "fields": {
+            "department": "Legal",
+            "strength": 7
+        }
+    },
+    {
+        "model": "charts.employee",
+        "pk": 28,
+        "fields": {
+            "department": "Customer Service",
+            "strength": 16
+        }
+    },
+    {
+        "model": "charts.employee",
+        "pk": 29,
+        "fields": {
+            "department": "IT Support",
+            "strength": 13
+        }
+    },
+    {
+        "model": "charts.employee",
+        "pk": 30,
+        "fields": {
+            "department": "Finance",
+            "strength": 20
+        }
+    }
+]
