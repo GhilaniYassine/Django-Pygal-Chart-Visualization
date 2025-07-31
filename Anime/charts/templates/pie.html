@@ -1,13 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>django-pygal</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Django Pygal Chart</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #f0f4f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .chart-container {
+      background: #fff;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 900px;
+    }
+
+    svg {
+      width: 100% !important;
+      height: auto !important;
+    }
+
+    @media (max-width: 600px) {
+      .chart-container {
+        padding: 10px;
+      }
+    }
+  </style>
 </head>
 <body>
-  {{ cht|safe }}
-  <script type="text/javascript" src="http://kozea.github.com/pygal.js/latest/pygal-tooltips.min.js"></script>  
+  <div class="chart-container">
+    {{ cht|safe }}
+  </div>
+
+  <script src="https://kozea.github.io/pygal.js/latest/pygal-tooltips.min.js"></script>
+  <script>
+    // Optional: Enhance chart interactivity or add animations here
+    document.addEventListener("DOMContentLoaded", () => {
+      console.log("Chart loaded and ready!");
+    });
+  </script>
 </body>
 </html>
